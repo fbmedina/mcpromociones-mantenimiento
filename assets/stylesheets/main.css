@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Euphemia UCAS';
+    src: url('../fonts/EuphemiaUCAS.woff2') format('woff2'),
+        url('../fonts/EuphemiaUCAS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Euphemia UCAS';
+    src: url('../fonts/EuphemiaUCAS-Bold.woff2') format('woff2'),
+        url('../fonts/EuphemiaUCAS-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body{
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    font-family: 'Euphemia UCAS';
+    text-align: center;
+    height: 100%;
+    max-width: 100%;
+    font-size: 14px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+main {
+    width: 100vw;
+    padding: 0 2.5vw 2rem 2.5vw;
+    margin: 1.5rem 0;
+}
+
+section {
+    margin: 4rem 0;
+    max-width: 100%;
+}
+
+hr {
+    border: 0;
+    height: 1px; 
+    background: rgb(219, 219, 219);
+    width: 25%;
+}
+
+article {
+    background: rgba(219, 219, 219, .25);
+    padding: 1.5rem 0;
+    flex-grow: 1;
+    margin: 1rem 0;
+}
+
+a {
+    color: rgba(51, 51, 51, .5);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(153, 51, 51);
+}
+
+h2 {
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.contact h3, .contact > p {
+    width: 100%;
+}
+
+.contact > p, .address {
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 576px) {
+    main {
+        padding: 0 5vw 2rem 5vw;
+    }
+    
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+
+@media (min-width: 768px) {
+    main{
+        padding: 0 17.5vw 2rem 17.5vw;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .left {
+        margin-right: 1rem;
+    }
+
+    .right {
+        margin-left: 1rem;
+    }
+
+    h2 {
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width: 992px) {
+    main {
+        padding: 0 20vw 2rem 20vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        padding: 0 25vw 2rem 25vw;
+    }
+
+    h2 {
+        font-size: 2.5vw;
+    }
+}
